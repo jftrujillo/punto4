@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <data>
+        <variable
+            name="product"
+            type="com.example.jhon.punto4.models.Producto"/>
+    </data>
+
+<LinearLayout
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{product.nombre}"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        />
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@{product.precio}"
+        android:textSize="24sp"
+        android:textColor="#000000"
+        />
+
+
+
+</LinearLayout>
+</layout>
+
